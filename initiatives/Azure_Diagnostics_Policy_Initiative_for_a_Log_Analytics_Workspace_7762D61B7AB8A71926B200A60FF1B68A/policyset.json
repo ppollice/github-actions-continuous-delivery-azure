@@ -1,0 +1,1050 @@
+{
+ "properties": {
+  "displayName": "Azure Diagnostics Policy Initiative for a Log Analytics Workspace",
+  "policyType": "Custom",
+  "description": "This initiative configures application Azure resources to forward diagnostic logs and metrics to an Azure Diagnostics sink point.",
+  "metadata": {
+   "category": "Monitoring",
+   "createdBy": "55974c32-26e5-4f8a-b8c1-fd90a16aa792",
+   "createdOn": "2021-01-19T19:03:40.0626346Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "profileName": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Profile Name for Config",
+     "description": "The profile name Azure Diagnostics"
+    }
+   },
+   "logAnalytics": {
+    "type": "String",
+    "metadata": {
+     "displayName": "logAnalytics",
+     "description": "The target Log Analytics Workspace for Azure Diagnostics",
+     "strongType": "omsWorkspace"
+    }
+   },
+   "metricsEnabled": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Enable Metrics",
+     "description": "Enable Metrics - True or False"
+    },
+    "allowedValues": [
+     "True",
+     "False"
+    ],
+    "defaultValue": "False"
+   },
+   "logsEnabled": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Enable Logs",
+     "description": "Enable Logs - True or False"
+    },
+    "allowedValues": [
+     "True",
+     "False"
+    ],
+    "defaultValue": "True"
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "2511199449807767031",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/7C3F20146D31464A442983B47A024427",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "4784078961387145719",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/4D3CF186A40A7C2C481B645A540C1C7C",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "5293747378572628717",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/9456090CCC9873CA052159C151F35235",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "14669457231407609203",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/A5FB8C4FB1EC1E0E226F2FC95E61D7FB",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "14158560941896707885",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/70E3CC3B14B51DC94F1CDE32A75BF775",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "17047155409058940244",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/8A2A1D2C2ABCA8629D59644360EF4A1C",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "5909522520535388451",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/27ED7449769BEA5D4A1A8FC5DBCAEC4D",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "1581309680239170154",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/3FFDC8504B8DFC245770B9DEDB86C6BF",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "1063971430477769914",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/6E7090D655F4D91498511C81A2AFA87A",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "7661034230674920653",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/E84B8271527313D90DC8E190C39FF74B",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "13919463526749046235",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/204F3D038AD9D98BBF748C311CDBC999",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "4105515069257857943",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/69236DBA82C8CBFBD4F0FA62344CCA83",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "1575053763341936505",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/3CB68922AFF76C909E2D2AA3A4D9217F",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "9733889371808666678",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/E4201F4322F1AF683A59A592530DB182",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "9040847631612512494",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/0231FCA785ED25776C9924503CF8B1EB",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "7034191267402057725",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/92867E6699CA57C898AE8256CE29E2C7",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "10029126868951813830",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/4D980DA79045A0BE32C90527CA138577",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "15001055346861718176",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/C89F5030DC8C4DD0F88D3B6C629D897A",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "6464832520168171640",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/C2E942DD7954DEB73491254DFA3FCB80",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "642644946923923004",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/103941B66EFD5882F03DEBBC8AC4C9A8",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "12475605791718309248",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/53088F5C33608CDBB0DC8986FAD69518",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "12967710220535570995",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/47E7039C09D1476D7A0EF69E0AB53940",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "1836281860236946411",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/A21171B563809D168E85381D83F9D2F7",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "6287490970930494084",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/93DFF553BBAC1E2370C0097029629386",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "12105341760334163463",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/359B0242B4627E1A10635D3204458406",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "17647258922433333563",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/05FD52F7B895F4FD9DE9ABD11700EE8F",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "12461385126974662671",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/0D32F82FC3AB649805888236FD965BE8",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "617195139078546953",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/4F2749280CA11D85CDE76E67E7BDAD9B",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "5908464603712855510",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/059FCFD83A21C111E03DB1091DAA7E9A",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "4420010721327962199",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/05EE701865C5EF359979ED0C591C8928",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "16148473976820278968",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/21F57A48443C0A60112B8A2C96ED1E5D",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "17165420729300965736",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/E52185E6FFDAABDB585CE5195AA711FE",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "4852581444294333940",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/398D805E4F5EA41D104171CA3EE84F36",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "5011738859918418892",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/AB571C9159E882B375133104C2473E7C",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "11994816926119738978",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/9B3C30C162A45B1B9DEC46B9F3FC2C69",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "12783142324787417050",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/51198AD7A860AEE57FD3A1FA913A2D9A",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "9033057957970330222",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/CE2A38D82B02FFA396B1D72D1E5B273A",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "14657314466407979035",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/6663C6D3F8EEAB4DEA59D4811926CE36",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "13213563424144492130",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/5C33253AA5A8888C9FBC582AC49F3FC7",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "13904374791662251827",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/DAD9789FA6159C2F6ED7E29BECBFDF69",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "5351444233342385625",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/9DA5EFBFE63BBAC0C09142D9B5FFDFC3",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "15894500105508593711",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/4ED3AE4C775BE4A6C963645E6097394E",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "10236411284569398487",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/2B64CC05F451BBC6D7CCB994374A1355",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "12987363488023242447",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/E7CB36201844C832918B0936BB18A75F",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "3383367627314572436",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/B408BD6F83DB012C0575614760F6FBA0",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "4186103251032923230",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/C450F6AA3432D07E7993607C6AAA7709",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "14097062887337715976",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/65988993B5BE788E4236CB35EC9A482D",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "14461191671642685598",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/D295350FC3E878836323C451C5BCCEEB",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "5759079065199773634",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/4BCBC4B11E519ABC073BE7D56FF4B85A",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "4800247906759408958",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/77D9B1433F86782BC5EC63C019CADA54",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "1343642661585309245",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/F4CDF014134DB67AB07D50BC43A70322",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "12643550548799785397",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/B531C5979EE8235C6C98F5B30A24DC1A",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "13504541892916365630",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/8B04F1F215D5193FAE02C592D02D16EF",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "8666404634437295193",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/EF4E93BE2778EFAA77F8D681C688C8AD",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   },
+   {
+    "policyDefinitionReferenceId": "14128391683976131985",
+    "policyDefinitionId": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policyDefinitions/ABFDA0EAB2FE77ED503037D276B6294E",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('logAnalytics')]"
+     },
+     "metricsEnabled": {
+      "value": "[parameters('metricsEnabled')]"
+     },
+     "logsEnabled": {
+      "value": "[parameters('logsEnabled')]"
+     },
+     "profileName": {
+      "value": "[parameters('profileName')]"
+     }
+    }
+   }
+  ]
+ },
+ "id": "/subscriptions/685ddf2a-6853-4b36-9137-e6a5ff2d6d4d/providers/Microsoft.Authorization/policySetDefinitions/7762D61B7AB8A71926B200A60FF1B68A",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "7762D61B7AB8A71926B200A60FF1B68A"
+}
